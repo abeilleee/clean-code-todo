@@ -1,0 +1,17 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "description": "TODO app refactored for the RS School Clean Code assignment",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "3.9.10"
+  }
+}
