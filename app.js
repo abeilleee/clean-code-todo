@@ -1,6 +1,6 @@
 const taskInput = document.getElementById('new-task');
 const addButton = document.getElementsByTagName('button')[0];
-const incompleteTasksList = document.getElementById('incompleteTasks');
+const incompleteTasksList = document.getElementById('incomplete-tasks');
 const completedTasksList = document.getElementById('completed-tasks');
 const initialTaskItems = [...incompleteTasksList.children, ...completedTasksList.children];
 
@@ -52,7 +52,7 @@ const editTask = function () {
   const editInput = listItem.querySelector('input[type=text]');
   const label = listItem.querySelector('label');
   const editButton = listItem.querySelector('.edit');
-  const isEditMode = listItem.classList.contains('editMode');
+  const isEditMode = listItem.classList.contains('edit-mode');
 
   if (isEditMode) {
     label.innerText = editInput.value;
@@ -62,7 +62,7 @@ const editTask = function () {
     editButton.innerText = 'Save';
   }
 
-  listItem.classList.toggle('editMode');
+  listItem.classList.toggle('edit-mode');
 };
 
 const deleteTask = function () {
