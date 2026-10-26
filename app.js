@@ -93,6 +93,6 @@ const bindTaskEvents = function (taskListItem) {
   checkbox.onchange = setTaskCompletion;
 };
 
-for (const task of initialTaskItems) {
-  bindTaskEvents(task);
+for (const taskItem of initialTaskItems) {
+  bindTaskEvents(taskItem);
 }
